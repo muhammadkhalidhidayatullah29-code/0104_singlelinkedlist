@@ -74,5 +74,12 @@ public:
             previous = current;
             current = current->next;
         }
+
+        return (current != NULL);
+    }
+
+    bool delNode(int nim)
+    {
+        
     }
 };
