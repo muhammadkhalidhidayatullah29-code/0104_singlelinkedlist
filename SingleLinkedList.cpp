@@ -154,8 +154,19 @@ int main()
             else
                 cout << "\nData dengan nomor mahasiswa " << nim << " berhasil dihapus\n";
             break;
-             
-                
+
+        case '3':
+            mhs.traverse();
+            break;
+
+        case '4':
+         {
+            if (mhs.listEmpty())
+             {
+                 cout << "\nList Kosong\n";
+                 break;
+             } 
+        }
         }
     }
 };
