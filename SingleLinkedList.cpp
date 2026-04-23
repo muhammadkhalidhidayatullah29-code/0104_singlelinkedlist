@@ -96,6 +96,16 @@ public:
 
     void traverse()
     {
-    
+        if (listEmpty())
+        {
+            cout << "\nList Kosong\n";
+        }
+        else
+        {
+            cout << "\nData di dalam list adalah:\n";
+            Node *currentNode = START;
+
+            
+        }
     }
 };
