@@ -163,8 +163,8 @@ int main()
          {
             if (mhs.listEmpty())
              {
-                 cout << "\nList Kosong\n";
-                 break;
+                cout << "\nList Kosong\n";
+                break;
              } 
 
              Node *previous, *current;
@@ -172,13 +172,23 @@ int main()
              cin >> nim;
 
              if (mhs.search(nim, previous, current) == false)
-                 cout << "\nData tidak ditemukan\n";
+                cout << "\nData tidak ditemukan\n";
              else
-             {
-                 cout << "\nData ditemukan\n";
-                 cout << "Nomor Mahasiswa: " << current->noMhs << endl;
-             }
+            {
+                cout << "\nData ditemukan\n";
+                cout << "Nomor Mahasiswa: " << current->noMhs << endl;
+            }
+            break;
         }
+
+        case '5':
+            break;
+
+        default:
+            cout << "\nPilihan salah!\n";
         }
-    }
-};
+
+    } while (ch != '5');
+
+    return 0;
+}
